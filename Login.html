@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <link href="./scripts/login.css" rel="stylesheet" />
+    <script src="./scripts/login.js"></script>
+    
+</head>
+<body>
+    <header>Login</header>
+    <form name='login' >
+        <ul list-style-type: none;>
+            <li><label for="txtUsername">Username/Email:</label></li>
+            <li><input type="text" name="txtUsername"  /></li>
+            <li><label for="txtPassword">Password</label></li>
+            <li><input type="password" name="txtPassword" size="12" /></li>
+        </ul>
+        <input type="button" name="SubmitButton" value="Submit" onClick="validateform(this.form)">
+        <input type="button" name="RegisterButton" value="Register" onClick="redirectToRegister()">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+	<meta charset="utf-8" />
+
+
+    <link href="./scripts/Register.css" rel="stylesheet" />
+    <script src="./scripts/register.js"></script>
+
+   
+</head>
+<body>
+    <form name='registration' >
+
+        <h1>Registration Form</h1>
+
+        <ul list-style-type: none;>
+            <li><label for="txtUsername">Email:</label></li> <br />
+            <li><input type="text" name="txtUsername"  /></li> <br />
+            <li><label for="txtPassword">Password</label></li> <br />
+            <li><input type="password" name="txtPassword" size="16" /></li> <br />
+            <li> <label for="txtConfirmPassword">Confirm Password</label></li> <br />
+            <li><input type="password" name="txtConfirmPassword" size="12" /></li> <br />
+
+<li><label for="txtFirstname">First name:</label></li><br />
+            <li><input type="text" name="txtFirstname"  /></li><br />
+            <li><label for="txtLastname">Last name:</label></li><br />
+            <li><input type="text" name="txtLastname"  /></li><br />
+            <li><label for="txtAddress">Address:</label></li><br />
+            <li><input type="text" name="txtAddress" size="100" /></li><br />
+            <li><label for="opGender">Gender:</label></li><br />
+            <li><select  name="opGender" class="nofocus" id="gender" >
+                    <option value="Select">Select</option>
+    <option value="other">Other</option>
+    <option value="female">Female</option>
+    <option value="male">Male</option>
+</select></li>
+        </ul>
+        <input type="button" name="SubmitButton" value="Submit" onClick="validateform(this.form)">
+    </form>
+</body>
+</html>
